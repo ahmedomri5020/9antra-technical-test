@@ -1,0 +1,7 @@
+.course-image {
+  width: 100%; /* Make the image take up full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Make sure the image covers the space without distortion */
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+  margin-bottom: 15px; /* Optional: Add space between image and course name */
+}

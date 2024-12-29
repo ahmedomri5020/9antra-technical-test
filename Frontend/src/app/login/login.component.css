@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-card-header {
+  background-color: #3f51b5; /* A richer blue color */
+  color: white;
+  padding: 16px 24px; /* More padding to give a spacious look */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a soft 3D effect */
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+mat-card-title {
+  font-size: 1.75em; /* Larger font size */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Add space between icon and text */
+}
+
+
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px; /* Adjust padding for better button size */
+  font-size: 1.1em; /* Slightly larger font size */
+  width: 100%; /* Ensure the button spans full width */
+}
+
+button.mat-raised-button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button.mat-raised-button:hover {
+  background-color: #303f9f; /* Darker shade on hover */
+}
+
+mat-form-field {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+mat-form-field .mat-form-field-label {
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+mat-form-field .mat-form-field-infix {
+  padding: 12px 12px;
+}
+
+mat-form-field input {
+  padding: 12px 12px;
+  height: 50px;
+}
+
+mat-form-field mat-icon {
+  right: 10px;
+}
+
+mat-form-field .mat-form-field-label {
+  line-height: 50px;
+}

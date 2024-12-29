@@ -1,0 +1,112 @@
+<div class="landing-page">
+  <style>
+    .landing-page {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .header .logo {
+      font-size: 2rem;
+      color: black;
+    }
+
+    .header .highlight {
+      color: #d63384;
+    }
+
+    .hero {
+      background: url('path/to/hero-image.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+    }
+
+    .hero .register-btn {
+      background-color: #d63384;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .courses {
+      padding: 50px 20px;
+    }
+
+    .courses-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .course {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 250px;
+    }
+
+    .contact-us {
+      background-color: #ffcc80;
+      padding: 50px 20px;
+    }
+
+    .contact-us form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-us form input,
+    .contact-us form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .contact-us form button {
+      background-color: #d63384;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1 class="logo">The <span class="highlight">Bridge</span></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h2>Improve your skills on your own</h2>
+      <h3>To prepare for a better future</h3>
+      <button class="register-btn">Register Now</button>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses">
+  <h2>Discover Our Courses</h2>
+  <div class="courses-grid">
+    <div *ngFor="let course of courses" class="course">
+          <img *ngIf="course.image" [src]="getImageUrl(course.image.idImage)" alt="Course Image" class="course-image" />
+      <h3>{{ course.nomCourse }}</h3>
+      <p>{{ course.prixCourse }} DT/ Month</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" name="name" />
+      <input type="email" placeholder="Email" name="email" />
+      <textarea placeholder="Write your message here" name="message"></textarea>
+      <button type="submit">Send the message</button>
+    </form>
+  </section>
+</div>

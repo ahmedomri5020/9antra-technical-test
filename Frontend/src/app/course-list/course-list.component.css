@@ -1,0 +1,118 @@
+/* Center the container vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: flex-start; /* Align to the top of the screen */
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+  padding-top: 20px; /* Add some space from the top */
+}
+
+/* Card styling */
+.courses-list-card {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px; /* Give some space from the top */
+}
+
+/* Card header styling */
+.mat-card-header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px 8px 0 0;
+}
+
+.mat-card-title {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Form field styling */
+.mat-form-field {
+  margin-bottom: 16px;
+}
+
+/* Full width for form elements */
+.full-width {
+  width: 100%;
+}
+
+/* Table styling */
+mat-table {
+  width: 100%;
+  overflow: auto;
+  table-layout: fixed;
+}
+
+mat-header-row, mat-row {
+  height: 48px;
+}
+.mat-column-image {
+  width: 100px; /* Set a fixed width for the image column */
+  text-align: center; /* Center the image within the column */
+}
+
+mat-header-cell, mat-cell {
+  padding: 16px;
+  text-align: left;
+}
+
+/* Button styling for mat-raised-button */
+button.mat-raised-button {
+  font-size: 1em;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+/* Styling for the search bar */
+.search-section {
+  background-color: #f1f1f1;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Custom colors for search bar and buttons */
+button.mat-raised-button.color-primary {
+  background-color: #3f51b5;
+  color: white;
+}
+
+button.mat-raised-button.color-accent {
+  background-color: #ff4081;
+  color: white;
+}
+
+button.mat-raised-button.color-warn {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hover effects for buttons */
+button.mat-raised-button:hover {
+  opacity: 0.8;
+}
+
+/* Focused label color for the search bar */
+.mat-form-field.mat-focused .mat-label {
+  color: #3f51b5 !important;
+}
+
+input.mat-input-element {
+  font-size: 1em;
+}
+
+/* Adjust the padding inside the table */
+.mat-header-cell, .mat-cell {
+  padding: 12px;
+}
+.course-image {
+  width: 50px; /* Limit the image width */
+  height: 50px; /* Limit the image height */
+  object-fit: cover; /* Ensure the image is not distorted */
+}
